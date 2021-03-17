@@ -10,6 +10,11 @@ a {
     background: none;
 }
 
+.inner {
+    width: 70vw;
+    margin: 0 auto;
+}
+
 /* first-heading */
 
 h1 {
@@ -56,12 +61,114 @@ small {
     font-size: 12px;
 }
 
+/* HEADER */
+
+header {
+    height: 3.125em;
+    margin: 0.625em 0 0 0.3125em;
+    padding: 0.125em 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+header .logo {
+    height: 50px;
+    float: left;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+header .logo .logo__icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    display: block;
+    float: left;
+}
+
+header .logo .logo__container {
+    width: 106px;
+    display: block;
+    float: left;
+}
+
+header .logo .logo__container .logo__wordmark {
+    width: 106px;
+    height: 25px;
+}
+
+header .logo .logo__container .log__tagline {
+    width: 106px;
+    height: 11px;
+}
+
+header nav.menu {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+header nav.menu .menu__content {
+    font-size: 12px;
+}
+
+header nav.menu .menu__content ul.menu__list {
+    float: right;
+}
+
+header nav.menu .menu__content ul.menu__list li {
+    float: left;
+    padding: 0 5px;
+}
+
+/* SEARCH BOX */
+
+header .inner nav .search__box {
+    position: relative;
+    height: 28px;
+    float: left;
+}
+
+header .inner nav .search__box input {
+    height: 28px;
+    padding: 5px 8px 5px 36px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    box-sizing: border-box;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px transparent;
+    font-size: 0.8125em;
+}
+
+header .inner nav .search__box input:focus {
+    height: 28px;
+    padding: 5px 8px 5px 36px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px transparent;
+    font-size: 0.8125em;
+}
+
+header .inner nav .search__box .material-icons {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    bottom: 0;
+    margin: auto 0;
+    font-size: 23px;
+}
+
 /* MAIN SECTION */
 
 .container {
     overflow: hidden;
     padding: 4rem 0;
-    width: 70vw;
     position: absolute;
     left: 0;
     right: 0;
@@ -109,12 +216,6 @@ small {
 .warning table.warning__box tr td {
     display: table-cell;
     vertical-align: middle;
-}
-
-.warning table.warning__box tr td.warning__bar .bar--warning {
-    background-color: orange;
-    height: 100%;
-    width: 15px;
 }
 
 .warning table.warning__box tr td.warning__image {
@@ -286,4 +387,25 @@ small {
 
 .references__wrapper ol {
     list-style-type: decimal;
+}
+
+/* MAIN EXTERNAL LINKS */
+
+.main .main__links {
+    text-align: justify;
+}
+
+.main .main__links h2 {
+    margin-top: 2rem;
+}
+
+.links__wrapper {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    padding-left: 2rem;
+}
+
+.links__wrapper ul {
+    list-style-type: disc;
 }
